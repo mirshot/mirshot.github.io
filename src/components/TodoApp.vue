@@ -54,9 +54,11 @@
         }
       },
       clickedDelete(e){
-        const parent = e.target.closest('li');
-        const seq = parent.getAttribute('data-seq');
-        this.remove(seq);
+        if(confirm("삭제하시겠습니까?")){
+          const parent = e.target.closest('li');
+          const seq = parent.getAttribute('data-seq');
+          this.remove(seq);
+        }  
       },
       getFilter(navigator){
         if(navigator == 'all'){
