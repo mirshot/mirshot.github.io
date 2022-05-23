@@ -87,8 +87,6 @@
       }
     },
     mounted(){
-
-
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
