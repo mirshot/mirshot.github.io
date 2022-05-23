@@ -96,6 +96,8 @@
     },
     created(){
       console.log("새로운 기능 추가")
+
+      console.log('새로운 기능 추가2')
     }
   }
 </script>
