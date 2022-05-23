@@ -89,7 +89,6 @@
       }
     },
     mounted(){
-      console.log('버그 발생 수정');
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
