@@ -93,6 +93,9 @@
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
+    },
+    created(){
+      console.log("새로운 기능 추가")
     }
   }
 </script>
