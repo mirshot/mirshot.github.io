@@ -46,10 +46,12 @@
         }
       },
       clickedCompleteDelete(e){
-        const todos = this.getFilter('completed');
-        todos.forEach((item)=>{
-          this.remove(item.seq);
-        })
+        if(confirm('삭제하시겠습니까?')){
+          const todos = this.getFilter('completed');
+          todos.forEach((item)=>{
+            this.remove(item.seq);
+          })
+        }
       },
       clickedDelete(e){
         const parent = e.target.closest('li');
