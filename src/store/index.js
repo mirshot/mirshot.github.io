@@ -1,7 +1,6 @@
 import { createStore } from 'vuex'
 import moment from 'moment';
 
-
 const storageKey = 'todo-list';
 
 export default createStore({
