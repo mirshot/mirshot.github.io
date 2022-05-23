@@ -89,6 +89,7 @@
       }
     },
     mounted(){
+      console.log('새로운 기능을 개발중입니다.')
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
