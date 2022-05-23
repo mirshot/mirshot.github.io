@@ -85,6 +85,7 @@
       }
     },
     mounted(){
+      alert('test')
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
