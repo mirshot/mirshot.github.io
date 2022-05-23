@@ -88,11 +88,13 @@
         parent.classList.remove('editing');
       }
     },
-    mounted(){
-      console.log('새로운 기능을 개발중입니다.')
+    mounted(){      
       this.$router.beforeEach((to)=>{
         this.navigator = to.name;
       })
+    },
+    created(){
+      alert('새로운 기능추가')
     }
   }
 </script>
