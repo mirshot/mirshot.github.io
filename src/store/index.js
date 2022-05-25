@@ -13,6 +13,7 @@ export default createStore({
   mutations: {
     created(state, todo){
       state.todoList.push(todo);
+      
     },
     updated(state){
       localStorage.setItem(storageKey, JSON.stringify(state.todoList));
