@@ -95,6 +95,7 @@
       })
     },
     created(){
+    console.log('소스트리')
     }
   }
 </script>
