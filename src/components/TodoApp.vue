@@ -13,7 +13,7 @@
       ...mapState(['todoList', 'filters']),
       filterTodos(){
         return this.getFilter(this.navigator)
-      },      
+      },
       toggleChecked:{
         get(){
           const count = this.todoList.filter((item)=>{
@@ -58,7 +58,7 @@
           const parent = e.target.closest('li');
           const seq = parent.getAttribute('data-seq');
           this.remove(seq);
-        }  
+        }
       },
       getFilter(navigator){
         if(navigator == 'all'){
@@ -104,6 +104,8 @@
 
 
       console.log('새로운 기능 추가4         ')
+
+      console.log('아니다')
     }
   }
 </script>
