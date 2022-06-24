@@ -95,6 +95,7 @@
       })
     },
     created(){
+<<<<<<< HEAD
       console.log("새로운 기능 추가")
 
       console.log('새로운 기능 추가2')
@@ -106,6 +107,9 @@
       console.log('새로운 기능 추가4         ')
 
       console.log('아니다')
+=======
+    console.log('소스트리')
+>>>>>>> 82278ce4516fe5f5e946ff881df4993b1151c64d
     }
   }
 </script>

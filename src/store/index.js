@@ -1,7 +1,6 @@
 import { createStore } from 'vuex'
 import moment from 'moment';
 
-
 const storageKey = 'todo-list';
 
 export default createStore({
@@ -14,6 +13,7 @@ export default createStore({
   mutations: {
     created(state, todo){
       state.todoList.push(todo);
+      
     },
     updated(state){
       localStorage.setItem(storageKey, JSON.stringify(state.todoList));
